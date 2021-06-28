@@ -3,16 +3,16 @@ package dev.brianmviana.sigae.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
 
 @Data
 @Builder
 @Entity
+@Table(name="usuario")
 public class User {
 	
 	@Id
