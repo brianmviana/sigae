@@ -1,13 +1,13 @@
 package dev.brianmviana.sigae.model.enums;
 
-public enum UserType {
+public enum UsuarioTipo {
 	STUDENT("student"),
 	TEACHER("teacher"),
 	ADMIN("admin");
 	
 	private String description;
 	
-	UserType(String description){
+	UsuarioTipo(String description){
 		this.description = description;
 	}
 	
