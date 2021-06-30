@@ -1,8 +1,8 @@
 package dev.brianmviana.sigae.model.enums;
 
 public enum UsuarioTipo {
-	STUDENT("student"),
-	TEACHER("teacher"),
+	ALUNO("aluno"),
+	PROFESSOR("professor"),
 	ADMIN("admin");
 	
 	private String description;
@@ -13,7 +13,5 @@ public enum UsuarioTipo {
 	
 	public String getDescription() {
 		return this.description;
-	}
-	
-	
+	}	
 }

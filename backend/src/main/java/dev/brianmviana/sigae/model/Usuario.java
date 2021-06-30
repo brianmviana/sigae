@@ -1,31 +1,34 @@
 package dev.brianmviana.sigae.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
+import org.springframework.beans.factory.annotation.Value;
+
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Entity
-@Table(name="user")
 public class Usuario {
-	
+
 	@Id
-	@GeneratedValue
-	private long id;
-	
 	@NotBlank
-	private String name;
+	private String username;
 
 	@NotBlank
-	private String login;
+	private String senha;
 
+	// TODO refatorar para classe Pessoa
 	@NotBlank
-	private String password;
-	
+	private String nome;
+
+	@Value("true")
+	private Boolean status;
 }
